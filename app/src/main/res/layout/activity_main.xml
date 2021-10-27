@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/buttonNotificar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="361dp"
+        android:layout_height="41dp"
         android:text="@string/valor1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,4 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.089" />
+
+    <Button
+        android:id="@+id/notificacaoDois"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/valor2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNotificar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonNotificar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotificar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

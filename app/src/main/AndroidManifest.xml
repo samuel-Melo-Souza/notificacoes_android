@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Notificacoes">
+        <receiver
+            android:name=".BroadcastNotificacao"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="CLICOU_BOTAO_SIM"/>
+                <action android:name="CLICOU_BOTAO_NAO"/>
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name=".Tela2"
             android:exported="true" />
